@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -46,7 +46,13 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
+#define MEMS_RW 0x80
+#define MEMS_MS 0x40
 
+#define MEMS_WHO_AM_I 0x0F
+#define MEMS_OUT_X 0x29
+#define MEMS_OUT_Y 0x2B
+#define MEMS_OUT_Z 0x2D
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
@@ -59,6 +65,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define MEMS_CS_Pin GPIO_PIN_3
 #define MEMS_CS_GPIO_Port GPIOE
+#define BUTTON_Pin GPIO_PIN_13
+#define BUTTON_GPIO_Port GPIOE
 #define LED1_Pin GPIO_PIN_12
 #define LED1_GPIO_Port GPIOD
 #define LED2_Pin GPIO_PIN_13
@@ -69,6 +77,7 @@ void Error_Handler(void);
 #define LED4_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
+
 
 /* USER CODE END Private defines */
 
