@@ -76,7 +76,7 @@ void Lcd_int(Lcd_HandleTypeDef * lcd, int number)
 void Lcd_hex(Lcd_HandleTypeDef * lcd, unsigned char number)
 {
 	char buffer[11];
-	sprintf(buffer, "%X", number);
+	sprintf(buffer, "0x%X", number);
 
 	Lcd_string(lcd, buffer);
 }

@@ -50,9 +50,9 @@ extern "C" {
 #define MEMS_MS 0x40
 
 #define MEMS_WHO_AM_I 0x0F
-#define MEMS_OUT_X 0x29
-#define MEMS_OUT_Y 0x2B
-#define MEMS_OUT_Z 0x2D
+#define MEMS_OUT_X 0x28
+#define MEMS_OUT_Y 0x2A
+#define MEMS_OUT_Z 0x2C
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
